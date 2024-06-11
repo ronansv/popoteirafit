@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-body {
+    background-color: #960dee;
+    color: white;
+}
+
+.login-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.fingerprint-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.fingerprint-button:hover {
+    transform: scale(1.1);
+}
+
+.fingerprint-image {
+    width: 100px;
+    height: 100px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    max-width: 90%;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+#popoteira-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#confirmation-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #960dee;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styles for other pages */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    background-color: #960dee;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #6d09ae;
+}
+
+.button h2 {
+    margin: 0;
+}
+
+.button p {
+    margin: 5px 0 0;
+}
+
+@media (min-width: 600px) {
+    .button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .button {
+        flex: 1 1 calc(50% - 30px);
+        margin: 10px;
+    }
+}
+
+.table-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #960dee;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    background-color: #960dee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6d09ae;
+}
